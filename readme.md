@@ -1,5 +1,13 @@
 # cumtb_token_api
 
+## TODO
+
+- [ ] 用fastapi重构
+- [ ] 限制访问数
+- [ ] 解决chrome无头浏览器不正常退出的内存泄露
+- [ ] 更改返回json格式,以便于前端程序处理
+- [ ] 更换基础镜像,减少docker大小
+
 ## 原理说明
 
 使用python的`selenium`库模拟浏览器，且使用了无头模式。通过访问特定的登录页面，当登录成功后，跳转的网址url中含有X_Id_Token，通过处理`driver.current_url`获取X_Id_Token。  
